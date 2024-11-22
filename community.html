@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPals - Community</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/community.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PetPals</div>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="petguide.html">Husdjursguide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="community-posts">
+            <div class="post-category">
+                <h2>Träningsråd</h2>
+                <div class="post-box">
+                    <img src="img/dog-training.jpg" alt="Hundträning">
+                    <h3>Max's Lydnadsträning</h3>
+                    <p>Hur jag lyckades lära min labrador grundläggande kommandon på bara två veckor!</p>
+                    <div class="post-meta">
+                        <span>Emma K.</span>
+                        <span>Hund</span>
+                        <span>2 timmar sedan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-category">
+                <h2>Hälsotips</h2>
+                <div class="post-box">
+                    <img src="img/cat-health.jpg" alt="Katthälsa">
+                    <h3>Whiskers Matsmältning</h3>
+                    <p>Bästa dieterna för katter med känslig mage - mina erfarenheter!</p>
+                    <div class="post-meta">
+                        <span>Johan L.</span>
+                        <span>Katt</span>
+                        <span>1 dag sedan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-category">
+                <h2>Roliga Historier</h2>
+                <div class="post-box">
+                    <img src="img/parrot-funny.jpg" alt="Papegojbus">
+                    <h3>Polly's Språklek</h3>
+                    <p>Min papegoja har lärt sig att härma telefonens ringsignal - total kaos!</p>
+                    <div class="post-meta">
+                        <span>Maria S.</span>
+                        <span>Fågel</span>
+                        <span>3 dagar sedan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-category">
+                <h2>Veterinärfrågor</h2>
+                <div class="post-box">
+                    <img src="img/dog-vet.jpg" alt="Veterinärvård">
+                    <h3>Vaccinationer hos valpar</h3>
+                    <p>Komplett guide till viktiga vaccinationer för unga hundar.</p>
+                    <div class="post-meta">
+                        <span>Dr. Anna P.</span>
+                        <span>Expertråd</span>
+                        <span>1 vecka sedan</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="create-post">
+            <h2>Skapa Nytt Inlägg</h2>
+            <form>
+                <input type="text" placeholder="Titel på inlägg" required>
+                <select required>
+                    <option value="">Välj kategori</option>
+                    <option value="training">Träningsråd</option>
+                    <option value="health">Hälsotips</option>
+                    <option value="stories">Roliga Historier</option>
+                    <option value="veterinary">Veterinärfrågor</option>
+                </select>
+                <textarea placeholder="Berätta din historia..." required></textarea>
+                <input type="file" accept="image/*" placeholder="Ladda upp bild">
+                <button type="submit">Publicera Inlägg</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 PetPals - Alla rättigheter reserverade</p>
+    </footer>
+</body>
+</html>
