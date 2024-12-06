@@ -19,11 +19,18 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem;
+    padding: 1px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
 }
-
 
 .logo {
     display: flex;
@@ -56,7 +63,7 @@ nav {
     background-color: var(--primary-color);
     padding: 10px 20px;
     border-radius: 50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgb(40, 119, 171);
 }
 
 .link-box ul {
@@ -65,7 +72,6 @@ nav {
     margin: 0;
     padding: 0;
     gap: 20px;
-    /* Avstånd mellan länkarna */
 }
 
 .link-box ul li a {
@@ -78,7 +84,6 @@ nav {
 
 .link-box ul li a:hover {
     color: var(--secondary-color);
-    /* Byt färg vid hovring */
 }
 
 footer {

@@ -51,3 +51,20 @@
 .pet-details ul li {
     margin-bottom: 5px;
 }
+
+.profile-image {
+    width: 150px;
+    height: auto;
+}
+
+.post-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.post-box img:hover {
+    transform: scale(1.05);
+}
