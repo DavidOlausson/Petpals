@@ -86,16 +86,24 @@
         <section class="create-post">
             <h2>Skapa Nytt Inlägg</h2>
             <form>
-                <input type="text" placeholder="Titel på inlägg" required>
-                <select required>
+                <label for="title">Titel på inlägg:</label>
+                <input id="title" type="text" name="title" title="Titel på inlägg" required>
+
+                <label for="category">Välj kategori:</label>
+                <select id="category" name="category" required>
                     <option value="">Välj kategori</option>
                     <option value="training">Träningsråd</option>
                     <option value="health">Hälsotips</option>
                     <option value="stories">Roliga Historier</option>
                     <option value="veterinary">Veterinärfrågor</option>
                 </select>
-                <textarea placeholder="Berätta din historia..." required></textarea>
-                <input type="file" accept="image/*" placeholder="Ladda upp bild">
+
+                <label for="content">Berätta din historia:</label>
+                <textarea id="content" name="content" placeholder="Berätta din historia..." required></textarea>
+
+                <label for="image">Ladda upp bild:</label>
+                <input id="image" type="file" name="image" accept="image" title="Ladda upp bild">
+
                 <button type="submit">Publicera Inlägg</button>
             </form>
         </section>
